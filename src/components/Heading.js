@@ -1,15 +1,14 @@
 import React from "react";
 
-const Header =()=>{
-    return (
- <div className="App">
+const Heading = () => {
+  return (
+    <div className="App">
 <header className="App-header">
     CYF Hotel
 <img className="App-logo" src='https://image.flaticon.com/icons/svg/139/139899.svg' alt="" />
 </header>
 </div>
-    )
+  );
+};
 
-}
-
-export default Header;
+export default Heading;

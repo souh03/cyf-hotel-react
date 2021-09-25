@@ -14,26 +14,19 @@ const Bookings = () => {
         booking.firstName === searchVal || booking.surname === searchVal
     );
     setBookings(filteredBookings);
-  
 
   };
 
-
-
-
-  useEffect(() => {
+ useEffect(() => {
     fetch(`https://cyf-react.glitch.me`)
 
-        .then((res) => res.json())
-        .then((data) => {
-            console.log(data)
+        .then((response) => response.json())
+        .then((data) => {console.log(data)
           setBookings(data);
         });
     }, []);
 
-
-
-  return (
+return (
     <div className="App-content">
       <div className="container">
         <Search search={search} />
